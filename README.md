@@ -2,5 +2,5 @@
 
 <h2>This is a script that evaluates the security of a given password.</h2>
 
-<h3>Output</h3>
+<h2>Output</h2>
 <img src="https://raw.githubusercontent.com/CodingPawn/password-strength-checker/main/sample.jpg">
