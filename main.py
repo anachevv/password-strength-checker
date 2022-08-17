@@ -15,7 +15,7 @@ def password_evaluator(pwd):
 
     issues = []
     if not recommended_length:
-        message = "Password length is shorter than the recommended one."
+        message = "Password does not contain 12 or more characters."
         issues.append(message)
     if not alternating_caps:
         message = "Password does not contain 3 or more uppercase letters."
