@@ -33,7 +33,7 @@ def password_advisor(pwd):
     if password_evaluator(pwd):
         return "Password is strong!"
     new_line = '\n'
-    return f"Password is weak! It is highly recommended to strength your password.\nIssues:\n" \
+    return f"Password is weak! It is highly recommended to strengthen your password.\nIssues:\n" \
            f"{new_line.join(str(issues.index(x) + 1) + '.' + x for x in issues)}"
 
 
