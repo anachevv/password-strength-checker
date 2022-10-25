@@ -1,11 +1,11 @@
-import re
+from re import findall
 
 
 def password_evaluator(pwd):
     recommended_length = len(pwd) >= 12  # 12 or more characters in password
     alternating_caps = len([letter for letter in pwd if letter.isupper()]) >= 1  # 1 or more uppercase letters
     include_numbers = len([num for num in pwd if num.isdigit()]) >= 3  # 3 or more digits in password
-    include_special_chars = len(re.findall(r"[^A-Za-z\d]", pwd)) >= 1  # 1 or more special symbols
+    include_special_chars = len(findall(r"[^A-Za-z\d]", pwd)) >= 1  # 1 or more special symbols
     conditions = [recommended_length, alternating_caps, include_numbers, include_special_chars]
 
     if all(conditions):  # Checks that all conditions are True
